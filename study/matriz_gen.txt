@@ -1,0 +1,13 @@
+def generate_matriz(num = 5):
+    number = 0
+    matriz = []
+    for i in range(0,num):
+        row = []
+        for j in range(0,num):
+            number += 1
+            row.append(number)
+        matriz.append(row)
+    return matriz
+
+mat = generate_matriz(5)
+print(mat)

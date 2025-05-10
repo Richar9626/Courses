@@ -1,0 +1,9 @@
+def incrementar_repetidos(dic):
+    nuevo_dic = {}
+    
+    for key, value in dic.items():
+        if key in nuevo_dic:
+            nuevo_dic[key] += value
+        else:
+            nuevo_dic[key] = value
+    return nuevo_dic

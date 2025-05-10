@@ -1,0 +1,9 @@
+def find_repeated(matriz):
+    found_num = {}
+    for fila in matriz:
+        for num in fila:
+            if num in found_num:
+                found_num[num] += 1
+            else:
+                found_num[num] = 1
+    return found_num

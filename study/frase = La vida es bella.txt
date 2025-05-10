@@ -1,0 +1,11 @@
+frase = "La vida es bella"
+longitudes = [len(palabra) for palabra in frase.split() if len(palabra) >= 3]
+print(longitudes)
+# Salida: [4, 5]
+
+
+string = "hola como estamos yo bien bien porques ricardo"
+str_list = string.split(' ')
+str_list_unique = set(str_list)
+longer_string = [word for word in str_list_unique if len(word) == max(map(len, str_list_unique))]
+print(longer_string)

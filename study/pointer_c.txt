@@ -1,0 +1,17 @@
+Int *ptr 
+Int value = *ptr
+
+Int num = 10
+Int *ptr = &num
+
+struct persona {
+   char nombre[50];
+   int edad;
+   float altura;
+};
+
+struct persona persona1;
+persona1.edad = 30;
+
+struct persona *ptr_persona;
+ptr_persona->nombre, ptr_persona->edad, ptr_persona->altura);

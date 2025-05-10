@@ -1,0 +1,4 @@
+cadena = "abracadabra"
+caracteres_unicos = [set(cadena)]
+print(caracteres_unicos)
+# Salida: ['a', 'b', 'r', 'c', 'd']

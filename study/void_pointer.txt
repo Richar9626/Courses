@@ -1,0 +1,8 @@
+int num1 = 20;    //variable of int datatype 
+void *ptr;        //Void Pointer
+*ptr = &num1;    //Point the pointer to int data
+print("%d",(*(int*)ptr));    //Dereferencing requires specific data type 
+
+char c = 'a';
+*ptr = &c;    //Same void pointer can be used to point to data of different type -> reusability
+print("%c",(*(char*)ptr));

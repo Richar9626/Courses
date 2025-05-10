@@ -1,0 +1,7 @@
+def es_palindromo(cadena):
+    cadena = cadena.lower()
+    return cadena == cadena[::-1]
+
+# Ejemplo de uso
+cadena = "AnitaLavaLaTina"
+print(f"La cadena '{cadena}' es un palíndromo: {es_palindromo(cadena)}")

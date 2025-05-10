@@ -1,0 +1,6 @@
+def imprimir_piramide(n):
+    for i in range(n):
+        # Imprimir espacios antes de los asteriscos
+        print(' ' * (n - i - 1), end='')
+        # Imprimir los asteriscos
+        print('*' * (2 * i + 1))

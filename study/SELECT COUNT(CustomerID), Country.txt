@@ -1,0 +1,16 @@
+SELECT COUNT(CustomerID), Country
+FROM Customers
+WHERE Country <> "Mexico"
+GROUP BY Country HAVING COUNT(CustomerID) > 2
+ORDER BY COUNT(CustomerID) DESC
+
+
+SELECT CustomerID, CustomerName, Country,
+CASE 
+	WHEN Country = "Mexico" OR "Argentina" OR "Brazil" THEN "LATINO"
+	WHEN Country = "Germany" THEN "Europeo"
+    ELSE "OTHER"
+END AS RACE
+FROM Customers
+HAVING Country = "Mexico" OR Country = "Germany"
+ORDER BY Country, CustomerName ASC
