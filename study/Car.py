@@ -18,9 +18,3 @@ class Mustang(Car):
 
 
 
-object = Mustang()
-
-object.driving()
-object.cylinders = 4
-object.size = "sedan"
-print(object.cylinders)
